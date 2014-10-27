@@ -12,7 +12,7 @@ public class DeleteContainerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest aRequest, HttpServletResponse aResponse) throws ServletException, IOException {
-        String theRequestPath = aRequest.getPathTranslated();
+        String theRequestPath = aRequest.getPathInfo();
         int theLastSlash = theRequestPath.lastIndexOf("/");
         String theContainerID = theRequestPath.substring(theLastSlash + 1);
 
