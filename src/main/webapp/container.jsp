@@ -2,11 +2,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
+    <link rel="stylesheet" href="../style.css">
 <head>
 </head>
 <body>
     <h1>List of local Docker Container</h1>
-    <a href="../imagelist/">Images</a><br>
+    <div class="menu">
+        <ul>
+            <li><a href="../imagelist/">Images</a><br></li>
+            <li class="selected"><a href="../containerlist/">Container</a><br></li>
+        </ul>
+    </div>
     <table>
          <tr>
             <th align="left">Id</th>

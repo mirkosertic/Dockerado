@@ -1,0 +1,24 @@
+.menu {
+  border: 1px solid black;
+}
+.menu ul {
+  padding: 0;
+  padding-left: 1em;
+}
+.menu ul li {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 1em;
+  background-color: black;
+  display: inline-block;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.menu ul li.selected {
+  background-color: lightgray;
+}
+.menu ul li.selected a {
+  color: black;
+}

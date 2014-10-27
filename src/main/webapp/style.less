@@ -1,0 +1,30 @@
+.borderRadius(@radius) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.menu {
+
+  border: 1px solid black;
+  ul {
+    padding: 0;
+    padding-left: 1em;
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .borderRadius(20px);
+      padding: 1em;
+      background-color: black;
+      display: inline-block;
+    }
+
+    li.selected {
+      background-color: lightgray;
+      a {
+        color: black;
+      }
+    }
+  }
+}

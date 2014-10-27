@@ -3,10 +3,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>List of local Docker Images</h1>
-    <a href="../containerlist/">Container</a><br>
+    <div class="menu">
+        <ul>
+            <li class="selected"><a href="../imagelist/">Images</a><br></li>
+            <li><a href="../containerlist/">Container</a><br></li>
+        </ul>
+    </div>
     <table>
          <tr>
             <th align="left">Id</th>
