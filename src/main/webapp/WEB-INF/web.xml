@@ -27,6 +27,11 @@
         <servlet-class>de.mirkosertic.dockerado.DeleteContainerServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>deleteImage</servlet-name>
+        <servlet-class>de.mirkosertic.dockerado.DeleteImageServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>images</servlet-name>
         <url-pattern>/imagelist/*</url-pattern>
@@ -50,5 +55,10 @@
     <welcome-file-list>
         <welcome-file>/containerlist/</welcome-file>
     </welcome-file-list>
+
+    <servlet-mapping>
+        <servlet-name>deleteImage</servlet-name>
+        <url-pattern>/deleteimage/*</url-pattern>
+    </servlet-mapping>
 
 </web-app>

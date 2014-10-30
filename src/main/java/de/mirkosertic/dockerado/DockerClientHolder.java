@@ -12,8 +12,8 @@ public class DockerClientHolder {
 
     private DockerClientHolder() {
         DockerClientConfig.DockerClientConfigBuilder configBuilder = DockerClientConfig.createDefaultConfigBuilder();
-        //configBuilder.withUri("http://127.0.0.1:2375");
-        configBuilder = configBuilder.withUri("http://192.168.59.103:2375");
+        configBuilder.withUri("http://127.0.0.1:2375");
+        //configBuilder = configBuilder.withUri("http://192.168.59.103:2375");
         DockerClientConfig config = configBuilder.build();
         client = DockerClientBuilder.getInstance(config).build();
     }
